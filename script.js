@@ -6,7 +6,6 @@ generateBtn.addEventListener("click", generatePalette);
 paletteContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("copy-btn")) {
         const hexValue = e.target.previousElementSibling.textContent;
-        console.log("copy-btn" + hexValue)
 
         navigator.clipboard
         .writeText(hexValue)
